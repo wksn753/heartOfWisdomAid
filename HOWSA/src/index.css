@@ -48,10 +48,22 @@ body{
   min-height: 100vh;
   background-color: var(--color-secondary);
 }
-
+.hide{
+  display: none !important;
+}
 
 .menu-button{
   display: none;
+}
+.about-page-text{
+  flex: 3;
+}
+.about-page-text p{
+  width: 90%;
+  
+}
+.about-page-image{
+  flex: 2;
 }
 .sidebar{
   display: flex;
@@ -367,6 +379,25 @@ a:hover {
 .even-columns{
   display: grid;
   gap: 1rem;
+}
+.team-members{
+  max-width: 100vw;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: space-around; /* Adjust as needed */
+  align-items: stretch; /* Adjust as needed */
+  margin: 20px;
+}
+.team-member{
+  width: 354px;
+  align-items: flex-start;
+}
+.team-member-image {
+  width: 100%;
+}
+.team-member-image img{
+  width: 88%;
+  height: auto;
+  border-radius: 9px;
 }
 @media(min-width:50em){
   .even-columns{

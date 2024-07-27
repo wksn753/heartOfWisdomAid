@@ -291,6 +291,6 @@ svg {
     width: 100%;
   }
   .heroImage{
-    order: -1;
+    order: 1;
   }
 }

@@ -8,12 +8,12 @@ const Home = () => {
     return (
         <main className="d-f-c">
             <section className="padding-block-700 padding16px">
-                <div className="container">
-                    <div className="even-columns">
+                <div className="container ">
+                    <div className="even-columns ">
                         <HeroSectionText />
-                    <div className="heroImage image-with-blob-bg">
-                        <img src={heroImage} alt="" />
-                    </div>
+                        <div className="reversed heroImage  image-with-blob-bg">
+                           <img src={heroImage} alt="" />
+                        </div>
                     </div>
                 </div>
             </section>
