@@ -1,23 +1,27 @@
 import HeroSectionText from "./Components/PageSections/HeroSectionText";
 import OurWorkSection from "./Components/PageSections/OurWorkSections";
 import ServicesSection from "./Components/PageSections/ServicesSection";
-import heroImage from "../../../public/howsa3.jpeg";
+import heroImage from "/howsa3.jpeg";
+import OrganizationActivities from "./Components/PageSections/OrganizationActivities";
+import ImpactSection from "./Components/PageSections/ImpactSection";
 const Home = () => {
     return (
-        <div className="d-f-c">
-            <section>
-                <div className="grid-5-columns wd-100vw ht-80vh padding16px">
-                    <div className=" grid-span-3-column">
+        <main className="d-f-c">
+            <section className="padding-block-700 padding16px">
+                <div className="container">
+                    <div className="even-columns">
                         <HeroSectionText />
-                    </div>
-                    <div className="grid-span-2-column hero-image-container">
+                    <div className="heroImage image-with-blob-bg">
                         <img src={heroImage} alt="" />
+                    </div>
                     </div>
                 </div>
             </section>
-            <OurWorkSection />;
-            <ServicesSection />;
-        </div>
+            <OurWorkSection />
+            <OrganizationActivities/>
+            <ServicesSection/>
+            <ImpactSection/>
+        </main>
     );
 }
 

@@ -4,17 +4,20 @@ interface AboutUsCardProps{
 }
 const AboutUsCard:React.FC<AboutUsCardProps>= ({title,content}) => {
     return ( 
-        <div className="d-f-c border-1px-solid padding16px">
-            <div><h3 className="cardHeading colorWhite">{title}</h3></div>
+        <li className="flow">
+            <h3 className="fs-600 fw-bold">{title}</h3>
             {content.includes("\n")?
-            <div>
+            <div className="flow2">
+                <ul role="list" className="numbered-items">
                 {/* if is a list */}
-                {content.split("\n").map((line,index)=>(<p className="cardDescription txt-alin-justified colorWhite">{index+1+". "+line}</p>))
+                {content.split("\n").map((line,index)=>(<li className="">{line}</li>))
                 }
+            </ul>
             </div>:
             // if content not a list
-            <div><p className="cardDescription txt-alin-justified colorWhite">{content}</p></div>}
-        </div>
+            <p className="">{content}</p>
+            }
+        </li>
      );
 }
  

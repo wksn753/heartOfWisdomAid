@@ -5,7 +5,7 @@ import { Link} from "react-router-dom"
 const Footer = () => {
     
     return (
-        <div className="footer d-f-c">
+        <section className="cta | footer d-f-c bg-primary-400 text-neutral-100">
             <div className="sb-footer section-padding d-f-c">
                 <div className="sb-footer-links d-f-r">
                     <div className="sb-footer-links-div d-f-c">
@@ -41,7 +41,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
 
