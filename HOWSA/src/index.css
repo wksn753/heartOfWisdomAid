@@ -232,6 +232,11 @@ a:hover {
   grid-template-columns: repeat(auto-fill, 300px);
   gap: 1rem;
 }
+.dynamic-grid2{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  gap: 4rem;
+}
 .grid-span-2-column{
   grid-column: span 2;
 }

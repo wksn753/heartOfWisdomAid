@@ -1,6 +1,13 @@
 import { useState } from "react";
 import TeamMember from "./components/TeamMember";
 import heroImage from "/howsa3.jpeg";
+import teamMember1 from "/team1.jpeg";
+import teamMember2 from "/team2.jpeg";
+import teamMember3 from "/team3.jpeg";
+import teamMember4 from "/team4.jpeg";
+import teamMember5 from "/team5.jpeg";
+import teamMember6 from "/team6.jpeg";
+import teamMember7 from "/team7.jpeg";
 const About = () => {
     const [showTeam, setShowTeam] = useState(false)
     const handleShowTeam = () => {
@@ -28,16 +35,13 @@ const About = () => {
                         <h2 className="fs-secondary-heading fw-bold">Meet <span>Our Team</span></h2>
                     </div>
                     <div id="team" className="team-members d-f-r">
-                        <TeamMember image={heroImage} name={'wama'} role={'ceo'} className={''} />
-                        <TeamMember image={heroImage} name={'wama'} role={'ceo'} className={''} />
-                        <TeamMember image={heroImage} name={'wama'} role={'ATC specialist'} className={''} />
-                        <TeamMember image={heroImage} name={'wama'} role={'ceo'} className={showTeam ? '' : 'hide'} />
-                        <TeamMember image={heroImage} name={'wama'} role={'IT specialist'} className={showTeam ? '' : 'hide'} />
-                        <TeamMember image={heroImage} name={'wama'} role={'Software Developer'} className={showTeam ? '' : 'hide'} />
-                        <TeamMember image={heroImage} name={'wama'} role={'Software Developer'} className={showTeam ? '' : 'hide'} />
-                        <TeamMember image={heroImage} name={'wama'} role={'Software Developer'} className={showTeam ? '' : 'hide'} />
-                        <TeamMember image={heroImage} name={'wama'} role={'Software Developer'} className={showTeam ? '' : 'hide'} />
-                        <TeamMember image={heroImage} name={'wama'} role={'Software Developer'} className={showTeam ? '' : 'hide'} />
+                        <TeamMember image={teamMember1} name={'Counsel Solomon Opolot'} role={'Legal Advisor'} className={''} />
+                        <TeamMember image={teamMember2} name={'Ssebuyira Isaac kitiibwa'} role={'Board Of Trustees'} className={''} />
+                        <TeamMember image={teamMember3} name={'Council Serwanga Alex'} role={'Governance,HR,Legal,Policy Expert'} className={''} />
+                        <TeamMember image={teamMember4} name={'Mubiru Derrick'} role={'Secretary'} className={showTeam ? '' : 'hide'} />
+                        <TeamMember image={teamMember5} name={'Baluku Joel'} role={'kasese Regional Coordinator'} className={showTeam ? '' : 'hide'} />
+                        <TeamMember image={teamMember6} name={'Mwebaze Becky Mary'} role={'Administration And Ethics'} className={showTeam ? '' : 'hide'} />
+                        <TeamMember image={teamMember7} name={'wama'} role={'Software Developer'} className={showTeam ? '' : 'hide'} />
                     </div>
                     <div className="d-f-c" style={{ width: "100%", alignItems: 'center', justifyContent: 'center' }}>
                         <button className="button" style={{ padding: '1rem', width: '10rem', margin: '2rem' }} onClick={handleShowTeam}>{showTeam ? "Hide" : "Show More"}</button>

@@ -9,6 +9,7 @@ import Root from './pages/Root';
 import ErrorPage from './pages/Error/ErrorPage';
 import Navbar from './componets/Navbar';
 import Footer from './componets/Footer';
+import Programs from './pages/Programs/Programs';
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
           <Route path="donate" element={<Donate />} />
           <Route path="contact" element={<Contact />} />
           <Route path="*" element={<ErrorPage />} />
-        
+          <Route path="/programs" element={<Programs />} />
       </Routes>
       <Footer/>
     </BrowserRouter>
