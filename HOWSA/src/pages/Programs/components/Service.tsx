@@ -7,6 +7,7 @@ const Service = ({ serviceImage, serviceTitle, serviceText,classname }: { servic
             <div className="service-text flow">
                 <h3 className="fs-600 fw-bold">{serviceTitle}</h3>
                 <p>{serviceText}</p>
+                
             </div>
             </div>
     );
