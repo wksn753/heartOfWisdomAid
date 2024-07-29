@@ -5,15 +5,18 @@ import howsa2 from "/howsa2.jpeg"
 
 const Programs = () => {
     return (
-        <main>
+        <main className="padding16px d-f-c">
+            <section>
+            <div className="flow">
+                    <h2 className="fs-secondary-heading fw-bold">Our <span>Programs</span></h2>
+                    <p>At HEART OF WISDOM STUDENTS AID (HOWSA) UG LIMITED, we believe that every child deserves the opportunity to succeed. Our programs are designed to provide comprehensive support to underprivileged children, ensuring they have access to education, healthcare, and the tools necessary to develop their talents and skills. Explore our key programs and see how we are making a difference.</p>
+            </div>
+            </section>
             <div className="training-programs d-f-c">
-
-                <div className="services-page-title d-f-c">
-                    <h1>Training <span>Programs</span></h1>
-                </div>
                 <div className="traing-programs-container d-f-c">
-                    <Service serviceImage={howsa1} serviceTitle={"Flight Training"} serviceText={"Start your aviation journey with our comprehensive Flight Training programs. Tailored for aspiring pilots, our courses blend theoretical knowledge with hands-on experience, providing the essential skills needed to navigate the skies confidently. From the basics to advanced maneuvers, we guide you through every step, ensuring a safe and exhilarating path to becoming a certified pilot."} classname="" />
-                    <Service serviceImage={howsa2} serviceTitle={"Air Traffic Control Training"} serviceText={"Unlock the world of Air Traffic Control with our specialized training. Our Air Traffic Control Training program equips individuals with the skills to manage and coordinate air traffic safely and efficiently. From understanding airspace regulations to mastering communication protocols, our comprehensive curriculum prepares you for a crucial role in aviation."} classname="f-d-r-r" />
+                    <Service serviceImage={howsa1} serviceTitle={"Educational Support"} serviceText={"Education is the cornerstone of our mission. We provide financial assistance for school fees, uniforms, and scholastic materials such as books, pens, and backpacks. This support ensures that children from vulnerable communities can attend school without financial barriers."} classname="" />
+                    <Service serviceImage={howsa2} serviceTitle={"Child Well-being"} serviceText={"We are committed to safeguarding the mental, physical, and spiritual health of children. Our programs include medical care, counseling, and spiritual mentorship to ensure children grow up healthy and resilient."} classname="f-d-r-r" />
+                    <Service serviceImage={howsa1} serviceTitle={"Community Sensitization and Outreach"} serviceText={"We conduct community sensitization and outreach programs to raise awareness about child development, protection, and care. These programs engage local leaders, parents, and guardians to create a supportive environment for children."} classname="" />
                 </div>
             </div>
         </main>

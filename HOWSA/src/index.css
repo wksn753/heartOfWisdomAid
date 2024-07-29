@@ -404,10 +404,21 @@ a:hover {
   height: auto;
   border-radius: 9px;
 }
+.f-d-r-r .service-text{
+  padding-left: 0;
+}
+.f-d-r-r .service-text p{
+  width: 94%;
+}
+
 @media(min-width:50em){
   .even-columns{
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
+  }
+  .f-d-r-r{
+    display: flex;
+    flex-direction: row-reverse;
   }
 }
 /* Responsive columns - one column layout (vertical) on small screens */
